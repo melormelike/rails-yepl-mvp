@@ -1,0 +1,10 @@
+    <h1><strong>Restaurant Details</strong></h1>
+    <div class= "container">
+    <p>Name: <%= @restaurant.name %></p>
+    <p>Adrress: <%= @restaurant.address %></p>
+    <p>Phone Number: <%= @restaurant.phone_number%></p>
+    <p>Category: <%= @restaurant.category %></p>
+    <%= link_to "Create a review", new_restaurant_review_path(@restaurant) %>
+    <%= link_to "Edit a restaurant", edit_restaurant_path(@restaurant) %>
+    <%= link_to "Restaurant List", restaurants_path(@restaurant) %>
+    </div>
